@@ -1,5 +1,6 @@
 package com.albert.dragon_bones.thread.volatileTest;
 
+
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
@@ -9,7 +10,6 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 public class VolatileInc implements Runnable {
     private static volatile int count = 0;//使用 volatileTest 修饰基本数据内存不能保证原子性
-
     //    private static volatileTest AtomicInteger count = new AtomicInteger(0);
     @Override
     public void run() {
