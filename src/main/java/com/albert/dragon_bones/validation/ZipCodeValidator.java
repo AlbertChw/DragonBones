@@ -1,4 +1,4 @@
-package com.albert.dragon_bones.thread.validation;
+package com.albert.dragon_bones.validation;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;

@@ -1,4 +1,4 @@
-package com.albert.dragon_bones.thread.validation;
+package com.albert.dragon_bones.validation;
 
 public class ValidatorTest {
 
