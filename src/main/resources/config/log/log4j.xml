@@ -1,32 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE log4j:configuration PUBLIC "-//log4j/log4j Configuration//EN" "log4j.dtd">
-<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/"
-                     threshold="null" debug="null">
-
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" threshold="null" debug="null">
     <!-- console日志会判断环境，非生产环境，会打印出console日志 -->
-    <appender name="CONSOLE" class="com.ymm.common.log4j.YmmConsoleAppender">
-        <param name="Target" value="System.out"/>
+    <appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+        <param name="Target" value="System.out" />
         <layout class="org.apache.log4j.PatternLayout">
-            <param name="ConversionPattern" value="%d %-5p [%c] [%t] %m%n"/>
+            <param name="ConversionPattern" value="%d %-5p [%l] %m%n" />
         </layout>
     </appender>
 
-    <!-- 默认会打印日志到指定目录/data/ymmapplogs/项目名/logs/app.log.yyyy-MM-dd -->
-    <appender name="ymmlogAppender" class="com.ymm.common.log4j.YmmFileAppender"></appender>
-
-    <!--<appender name="rootAppender" class="org.apache.log4j.DailyRollingFileAppender">-->
-        <!--<param name="File" value="/data/applogs/ymm-operation-app/logs/app.log" />-->
-        <!--<layout class="org.apache.log4j.PatternLayout">-->
-            <!--<param name="ConversionPattern" value="[%d{yyyy-MM-dd HH:mm:ss,SSS}] [%p] [%t] [%l] %m%n" />-->
-        <!--</layout>-->
-    <!--</appender>-->
-
-    <appender name="catAppender" class="com.dianping.cat.log4j.CatAppender"></appender>
-
     <root>
-        <level value="INFO" />
-        <appender-ref ref="CONSOLE" />
-        <appender-ref ref="catAppender"/>
-        <appender-ref ref="ymmlogAppender"/>
+        <level value="INFO"/>
+        <appender-ref ref="CONSOLE"/>
     </root>
 </log4j:configuration>
