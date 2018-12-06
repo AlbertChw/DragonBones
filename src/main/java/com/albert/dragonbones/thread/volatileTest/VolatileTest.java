@@ -1,4 +1,4 @@
-package com.albert.dragon_bones.thread.volatileTest;
+package com.albert.dragonbones.thread.volatileTest;
 
 import java.util.concurrent.TimeUnit;
 

@@ -1,4 +1,4 @@
-package com.albert.dragon_bones.validation;
+package com.albert.dragonbones.validation;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;

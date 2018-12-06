@@ -1,4 +1,4 @@
-package com.albert.dragon_bones.orika;
+package com.albert.dragonbones.orika;
 
 import ma.glasnost.orika.MapperFacade;
 import ma.glasnost.orika.MapperFactory;

@@ -1,7 +1,5 @@
-package com.albert.dragon_bones.thread.volatileTest;
+package com.albert.dragonbones.thread.volatileTest;
 
-
-import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Volatile内存可见性测试

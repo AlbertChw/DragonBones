@@ -1,4 +1,4 @@
-package com.albert.dragon_bones.concurrent;
+package com.albert.dragonbones.concurrent;
  
 import com.google.common.util.concurrent.RateLimiter;
 

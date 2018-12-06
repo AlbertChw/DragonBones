@@ -1,4 +1,4 @@
-package com.albert.dragon_bones.concurrent;
+package com.albert.dragonbones.concurrent;
 
 /**
  * Created by Albert on 2018/8/8.

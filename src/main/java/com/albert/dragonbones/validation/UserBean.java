@@ -1,4 +1,4 @@
-package com.albert.dragon_bones.validation;
+package com.albert.dragonbones.validation;
 
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.Length;

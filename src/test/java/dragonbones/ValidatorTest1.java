@@ -1,7 +1,7 @@
-package com.albert.dragon_bones;
+package com.albert.dragonbones;
 
-import com.albert.dragon_bones.validation.BeanValidator;
-import com.albert.dragon_bones.validation.UserBean;
+import com.albert.dragonbones.validation.BeanValidator;
+import com.albert.dragonbones.validation.UserBean;
 import org.junit.Test;
 
 public class ValidatorTest1 {
