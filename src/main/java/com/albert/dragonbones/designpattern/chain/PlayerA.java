@@ -3,10 +3,10 @@ package com.albert.dragonbones.designpattern.chain;
 /**
  * 具体处理者，传花人
  */
-public class PlayerC extends Player {
+public class PlayerA extends Player {
 
     //构造方法,传入下一个传花人
-    public PlayerC(Player successor) {
+    public PlayerA(Player successor) {
         this.setSuccessor(successor);
     }
 
@@ -14,10 +14,10 @@ public class PlayerC extends Player {
     //传花的过程
     @Override
     public void handle(int i) {
-        if (i==3){
-            System.out.println("PlayerC 喝酒！");
+        if (i==1){
+            System.out.println("PlayerA 喝酒！");
         }else {
-            System.out.println("PlayerC 向下传花！");
+            System.out.println("PlayerA 向下传花！");
             next(i);
         }
 
