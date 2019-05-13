@@ -4,7 +4,7 @@ public class ValidatorTest {
 
     public static void main(String[] args) {
         UserBean userBean = new UserBean();
-        userBean.setAge(12);
+//        userBean.setAge(55);
         userBean.setName("张三");
         userBean.setAddress("124444444112");
         userBean.setEmail("123");

@@ -13,6 +13,7 @@ import javax.validation.constraints.NotNull;
  */
 public class UserBean {
     @Range(min = 20, max = 50, message = "age应该在[20，50]之间")
+    @NotNull(message = "age不能为空")
     private Integer age;
 
     @NotNull(message = "name不能为空")
