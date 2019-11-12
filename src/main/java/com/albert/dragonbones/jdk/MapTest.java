@@ -2,6 +2,7 @@ package com.albert.dragonbones.jdk;
 
 import com.albert.dragonbones.validation.UserBean;
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 
 import java.util.*;
 
@@ -16,7 +17,16 @@ public class MapTest {
 //        replaceAll();
 //        putIfAbsent();
 //        computeIfAbsent();
-        merge();
+//        merge();
+        String s = "{\"23984\":\"19177328\",\"22798\":\"18701501\"}";
+
+        Map<String, Object> map = (Map<String, Object>) JSONObject.parse(s);
+
+
+        System.out.println(map.get("22798"));
+
+        Long l = Long.parseLong(map.get("22798").toString());
+        System.out.println(l);
     }
 
 

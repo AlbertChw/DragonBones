@@ -1,8 +1,16 @@
 package com.albert.dragonbones.csv;
 
+import com.albert.dragonbones.pingyin4j.PinyinUtils;
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+import org.apache.commons.collections.MapUtils;
+
 import java.io.*;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.Objects;
 
 /**
  * Created by Albert on 2019/4/24.
@@ -44,20 +52,32 @@ public class ReadCSV {
 
     public static void main(String[] args) throws Exception {
 
-//        List<String> truckSeries = readCSV("/Users/Albert/Downloads/truck_series.csv");
-//
-//        List<String> truckBrand = readCSV("/Users/Albert/Downloads/truck_brand.csv");
-//
-//        List<String> truckModel = readCSV("/Users/Albert/Downloads/truck_model.csv");
-//
-//
-//        List<Product> productList = new ArrayList<>();
-//
-//
-//
-//        List<String> insertProduct = new ArrayList<>();
-//
-//        String insert = " insert into `product` (`id`, `product_no`,`product_name`,`product_pic_url`,`brand_id`) values ()";
 
+
+//        List<String> lineList = readCSV("/Users/Albert/Downloads/x.txt");
+//
+//        for (String line : lineList) {
+//            Map<String, Object> map = JSON.parseObject(line, Map.class);
+//            if (MapUtils.isNotEmpty(map)) {
+//                Map.Entry<String, Object> entry = head(map);
+//
+//                System.out.println(entry.getKey());
+//                System.out.println(entry.getValue().toString());
+//                System.out.println(" ------> ");
+//            }
+//        }
     }
+    private static Map.Entry<String, Object> head(Map<String, Object> map) {
+        if (MapUtils.isEmpty(map)) {
+            return null;
+        }
+        Map.Entry<String, Object> obj = null;
+        for (Map.Entry<String, Object> entry : map.entrySet()) {
+            if (entry != null) {
+                return entry;
+            }
+        }
+        return obj;
+    }
+
 }
