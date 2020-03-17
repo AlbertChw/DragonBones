@@ -1,6 +1,7 @@
 package com.albert.dragonbones.pingyin4j;
 
 
+import com.alibaba.fastjson.JSONObject;
 import net.sourceforge.pinyin4j.PinyinHelper;
 import net.sourceforge.pinyin4j.format.HanyuPinyinCaseType;
 import net.sourceforge.pinyin4j.format.HanyuPinyinOutputFormat;
@@ -103,7 +104,19 @@ public class PinyinUtils {
     }
 
     public static void main(String[] args) {
-        String test = "江苏满运科技有限公司";
-        System.out.println(PinyinUtils.getPingYinAll(test));
+//        String test = "江苏满运科技有限公司";
+//        System.out.println(PinyinUtils.getPingYinAll(test));
+
+        JSONObject jo = new JSONObject();
+
+        jo.put("1",1);
+        jo.put("2",2);
+        jo.put("3",3);
+        jo.put("1","a");
+
+        JSONObject priceMakeUpRuleJson = new JSONObject();
+        priceMakeUpRuleJson.put("all" ,jo);
+
+        System.out.println(priceMakeUpRuleJson.toJSONString());
     }
 }

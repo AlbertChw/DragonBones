@@ -15,9 +15,9 @@ import java.util.concurrent.TimeUnit;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = App.class)
-public class SpringBootLettuceRedisApplicationTests {
+public class SpringBootRedisApplicationTests {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(SpringBootLettuceRedisApplicationTests.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(SpringBootRedisApplicationTests.class);
 
 
     @Autowired

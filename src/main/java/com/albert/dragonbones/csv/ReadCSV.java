@@ -4,18 +4,18 @@ import com.albert.dragonbones.pingyin4j.PinyinUtils;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import org.apache.commons.collections.MapUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.io.*;
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
+import java.util.*;
 
 /**
  * Created by Albert on 2019/4/24.
  */
 public class ReadCSV {
+
+    private static Set<Map.Entry<String, Map<String, Boolean>>> en;
 
     public static List<String> readCSV(String path) throws IllegalAccessException, InstantiationException {
         File csv = new File(path);  // CSV文件路径
@@ -52,32 +52,52 @@ public class ReadCSV {
 
     public static void main(String[] args) throws Exception {
 
+//day , <cargoId, exist>
+        Map<String, Map<String, Boolean>> total = new HashMap<>();
 
+        Map<String, Boolean> innerMap;
 
-//        List<String> lineList = readCSV("/Users/Albert/Downloads/x.txt");
-//
-//        for (String line : lineList) {
-//            Map<String, Object> map = JSON.parseObject(line, Map.class);
-//            if (MapUtils.isNotEmpty(map)) {
-//                Map.Entry<String, Object> entry = head(map);
-//
-//                System.out.println(entry.getKey());
-//                System.out.println(entry.getValue().toString());
-//                System.out.println(" ------> ");
-//            }
-//        }
-    }
-    private static Map.Entry<String, Object> head(Map<String, Object> map) {
-        if (MapUtils.isEmpty(map)) {
-            return null;
-        }
-        Map.Entry<String, Object> obj = null;
-        for (Map.Entry<String, Object> entry : map.entrySet()) {
-            if (entry != null) {
-                return entry;
+        List<String> lineList = readCSV("/Users/Albert/Downloads/隐私电话");
+
+        for (int i =1 ; i<=166224 ;i++) {
+
+            String line = lineList.get(i);
+            if (StringUtils.isNotBlank(line)) {
+                //split
+                String day = line.split(",")[0];
+                String cargoid = line.split(",")[1];
+                boolean exist = "1.0".equals(line.split(",")[6]);
+                System.out.println(i);
+                innerMap  = total.get(day);//day
+                if (MapUtils.isEmpty(innerMap)) {
+                    innerMap = new HashMap<>();
+                    innerMap.put(cargoid, exist);
+
+                    total.put(day, innerMap);
+                } else {
+                    if(innerMap.get(cargoid) != null && !innerMap.get(cargoid)) {
+                        innerMap.put(cargoid, exist);
+                    }
+                    total.put(day, innerMap);
+                }
+
             }
+
         }
-        return obj;
+
+        en = total.entrySet();
+        for (Map.Entry<String, Map<String, Boolean>> e : en) {
+            Map<String, Boolean> v = e.getValue();
+            int a = 0;
+            Collection<Boolean> list = v.values();
+            for(Boolean bool : list){
+                if (bool) {
+                    a++;
+                }
+            }
+
+            System.out.println(e.getKey() +"  总货源  "+ e.getValue().size() + "  "+ a/e.getValue().size());
+        }
     }
 
 }
