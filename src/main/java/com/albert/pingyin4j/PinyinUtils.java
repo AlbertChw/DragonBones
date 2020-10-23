@@ -1,4 +1,4 @@
-package com.albert.dragonbones.pingyin4j;
+package com.albert.pingyin4j;
 
 
 import com.alibaba.fastjson.JSONObject;
@@ -8,6 +8,13 @@ import net.sourceforge.pinyin4j.format.HanyuPinyinOutputFormat;
 import net.sourceforge.pinyin4j.format.HanyuPinyinToneType;
 import net.sourceforge.pinyin4j.format.HanyuPinyinVCharType;
 import net.sourceforge.pinyin4j.format.exception.BadHanyuPinyinOutputFormatCombination;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 public class PinyinUtils {
 
@@ -118,5 +125,6 @@ public class PinyinUtils {
         priceMakeUpRuleJson.put("all" ,jo);
 
         System.out.println(priceMakeUpRuleJson.toJSONString());
+
     }
 }

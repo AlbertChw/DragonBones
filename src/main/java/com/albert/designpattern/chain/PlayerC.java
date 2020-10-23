@@ -1,4 +1,4 @@
-package com.albert.dragonbones.designpattern.chain;
+package com.albert.designpattern.chain;
 
 /**
  * 具体处理者，传花人

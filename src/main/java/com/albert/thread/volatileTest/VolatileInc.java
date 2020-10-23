@@ -1,4 +1,4 @@
-package com.albert.dragonbones.thread.volatileTest;
+package com.albert.thread.volatileTest;
 
 
 /**

@@ -1,4 +1,4 @@
-package com.albert.dragonbones.config;
+package com.albert.config;
 import io.lettuce.core.resource.ClientResources;
 
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;

@@ -1,4 +1,4 @@
-package com.albert.dragonbones.spring.domain;
+package com.albert.spring.domain;
 
 /**
  * @description:

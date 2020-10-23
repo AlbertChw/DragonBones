@@ -1,4 +1,4 @@
-package com.albert.dragonbones;
+package com.albert;
 
 import java.util.zip.CRC32;
 

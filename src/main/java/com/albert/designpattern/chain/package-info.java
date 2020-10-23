@@ -4,4 +4,4 @@
  * 责任链模式, 是设置了才会链进行
  * Created by Albert on 2019/3/22.
  */
-package com.albert.dragonbones.designpattern.chain;
+package com.albert.designpattern.chain;

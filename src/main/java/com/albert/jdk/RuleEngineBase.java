@@ -1,4 +1,4 @@
-package com.albert.dragonbones.jdk;
+package com.albert.jdk;
 
 import java.io.UnsupportedEncodingException;
 import java.util.zip.CRC32;

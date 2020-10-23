@@ -1,6 +1,6 @@
-package com.albert.dragonbones.spring.domain;
+package com.albert.spring.domain;
 
-import com.albert.dragonbones.spring.annotation.Super;
+import com.albert.spring.annotation.Super;
 
 /**
  * @description:

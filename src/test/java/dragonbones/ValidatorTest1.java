@@ -1,7 +1,6 @@
 package dragonbones;
 
-import com.albert.dragonbones.validation.BeanValidator;
-import com.albert.dragonbones.validation.UserBean;
+import com.albert.validation.UserBean;
 import org.apache.commons.lang3.time.DateUtils;
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.albert.dragonbones.validation;
+package com.albert.validation;
 
 public class ValidatorTest {
 

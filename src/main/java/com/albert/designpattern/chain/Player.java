@@ -1,4 +1,4 @@
-package com.albert.dragonbones.designpattern.chain;
+package com.albert.designpattern.chain;
 
 /**
  * 抽象处理者

@@ -1,4 +1,4 @@
-package com.albert.dragonbones.orika;
+package com.albert.orika;
 
 public class Person {
     private Integer id;

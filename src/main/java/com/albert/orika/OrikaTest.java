@@ -1,4 +1,4 @@
-package com.albert.dragonbones.orika;
+package com.albert.orika;
 
 import com.alibaba.fastjson.JSON;
 import ma.glasnost.orika.MapperFacade;

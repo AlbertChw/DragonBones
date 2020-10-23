@@ -1,4 +1,4 @@
-package com.albert.dragonbones.csv;
+package com.albert.csv;
 
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;

@@ -1,4 +1,4 @@
-package com.albert.dragonbones;
+package com.albert;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

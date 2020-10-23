@@ -1,4 +1,4 @@
-package com.albert.dragonbones.spring.annotation;
+package com.albert.spring.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

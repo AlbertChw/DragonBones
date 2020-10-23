@@ -1,4 +1,4 @@
-package com.albert.dragonbones.designpattern.strategy;
+package com.albert.designpattern.strategy;
 
 /**
  * 测试类，上下文类

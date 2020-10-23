@@ -1,6 +1,6 @@
-package com.albert.dragonbones.jdk;
+package com.albert.jdk;
 
-import com.albert.dragonbones.validation.UserBean;
+import com.albert.validation.UserBean;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 

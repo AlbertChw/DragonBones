@@ -1,3 +1,5 @@
+package com.albert.thread.volatileTest;
+
 import com.google.common.util.concurrent.*;
 import org.apache.commons.lang3.StringEscapeUtils;
 import org.apache.commons.lang3.StringUtils;

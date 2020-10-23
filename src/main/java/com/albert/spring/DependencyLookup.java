@@ -1,7 +1,7 @@
-package com.albert.dragonbones.spring;
+package com.albert.spring;
 
-import com.albert.dragonbones.spring.annotation.Super;
-import com.albert.dragonbones.spring.domain.User;
+import com.albert.spring.annotation.Super;
+import com.albert.spring.domain.User;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.ListableBeanFactory;
 import org.springframework.beans.factory.ObjectFactory;

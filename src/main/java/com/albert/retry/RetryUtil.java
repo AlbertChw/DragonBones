@@ -1,4 +1,4 @@
-package com.albert.dragonbones.retry;
+package com.albert.retry;
 
 import com.github.rholder.retry.*;
 import com.google.common.base.Predicates;

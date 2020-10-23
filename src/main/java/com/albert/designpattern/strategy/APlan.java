@@ -1,4 +1,4 @@
-package com.albert.dragonbones.designpattern.strategy;
+package com.albert.designpattern.strategy;
 
 /**
  * A计划
