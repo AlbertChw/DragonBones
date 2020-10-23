@@ -10,6 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.LinkedHashMap;
 import java.util.concurrent.TimeUnit;
 
 
@@ -35,5 +36,23 @@ public class SpringBootRedisApplicationTests {
     }
     
 
-    
+    @Test
+    public void test () {
+        LinkedHashMap<String, Double> temp = new LinkedHashMap<>();
+        temp.put("0,3",1.15);
+        temp.put("4,9",1.25);
+        temp.put("10,15",1.35);
+        temp.put("16,20",1.45);
+
+
+
+        int price = 2;
+        temp.entrySet().stream().peek(x->{
+            String[] arr = x.getKey().split(",");
+            if (price >Integer.parseInt(arr[0]) && price <= Integer.parseInt(arr[1])) {
+                System.out.println(x.getValue());
+            }
+
+        });
+    }
 }
